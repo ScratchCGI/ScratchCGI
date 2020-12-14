@@ -4,20 +4,34 @@
       <title>Scratch CGI - Portfolios</title>
       <meta charset="utf-8">
       <meta name="viewport" content="width=device-width, initial-scale=1">
-      <link rel="stylesheet" href="/css/portfolio.css">
-      <link id="pagestyle" rel="stylesheet" type="text/css" href="/css/lightmode.css">
-      <script type="application/javascript" src="/scripts/styles.js"></script>
+      <link rel="stylesheet" href="css/main.css">
+      <!-- <link rel="stylesheet" href="/css/portfolio.css"> -->
+      <script type="application/javascript" src="scripts/styles.js"></script>
       <script src="https://cdn.jsdelivr.net/npm/sweetalert2@10"></script>
       <script src="https://cdn.jsdelivr.net/npm/promise-polyfill"></script>
       <script src="scripts/compatibility.js"></script>
       <link rel="icon" type="image/png" href="favicon.png">
     </head>
-  <body onload="init(); checkCompat();">
+  <body class="light" onload="checkCompat()">
+    <nav class="navbar">
+      <ul class="navbar-nav">
+        <li class="nav-item"><a href="index.html">Home</a></li>
+        <li class="nav-item">About</li>
+        <li class="nav-item has-dropdown">
+          <a href="#">Themes</a>
+            <ul class="dropdown">
+              <li class="dropdown-item">
+                <a id="lightmode" href="#">light</a>
+              </li>
+              <li class="dropdown-item">
+                <a id="darkmode" href="#">dark</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-item"><a href="portfolios.html">Portfolios</a></li>
+      </ul>
+    </nav>
       <div class="main">
-        <h1 class="title">Scratch CGI</h1>
-        <hr>
-        <h2 class="title">PORTFOLIOS</h2>
-        <p class="title">My portfolios of art.</p>
         <div class="row">
           <div class="column">
             <div class="content">
@@ -92,10 +106,6 @@
         <div>
           <p class="footer">© 2020 Diego Del Toro</p>
           <p class="footer">For a version of this site with uncompressed images, click <a href="/uncomp/index.html">here</a>. WARNING: It will take significantly longer to load.</p>
-        </div>
-        <div>
-          <button id="lightmode">Light Mode</button>
-          <button id="darkmode">Dark Mode</button>
         </div>
       </div>
   </body>

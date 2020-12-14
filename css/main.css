@@ -1,5 +1,90 @@
 @import "fonts.css";
 
+/* Portfolios */
+* {
+    box-sizing: border-box;
+  }
+
+  .main {
+    max-width: 1000px;
+    margin: auto;
+  }
+  
+  h1 {
+    font-size: 50px;
+    word-break: break-all;
+  }
+  
+  .row {
+    margin: 8px -16px;
+    column-count: 4;
+  }
+  
+  .row,
+  .row > .column {
+    padding: 8px;
+  }
+  
+  .column {
+    break-inside: avoid;
+    backface-visibility: hidden;
+    -webkit-backface-visibility: hidden;
+  }
+  
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+
+  .content:hover {
+      transform: scale(1.5);
+      z-index: 100;
+  }
+  
+  @media screen and (max-width: 900px) {
+    .column {
+      column-count: 2;
+    }
+  }
+  
+  @media screen and (max-width: 600px) {
+    .column {
+      column-count: 1;
+    }
+  }
+
+  .title {
+      font-family: "Atmospheric";
+  }
+  
+  body {
+    padding: 20px;
+    font-family: "Montserrat";
+  }
+
+  .content {
+    padding: 10px;
+    transition: transform .2s;
+    position: relative;
+    background-color: var(--accent);
+  }
+
+  .swal2-html-container {
+    font-family: "Atmospheric";
+    font-size: 10pt;
+    color: var(--text) !important;
+  }
+
+  .swal2-title {
+    font-family: "Atmospheric";
+    color: var(--text) !important;
+  }
+  .swal2-confirm {
+    font-family: "Atmospheric";
+    color: var(--text) !important;
+}
+
 body {
     margin: 0;
     padding: 0;
@@ -84,34 +169,33 @@ main {
     margin-right: 10px;
 }
 
-
 /* Theme Settings */
 :root {
-    --shimmering-blush: #d88c9aff;
-    --turquoise: #5dd9c1ff;
-    --maximum-yellow-red: #ffc857ff;
-    --rich-black-fogra-39: #020300ff;
-    --spanish-violet: #4c2c69ff;
+    --light-pink: #f6cffd;
+    --light-blue: #ced6fd;
+    --light-green: #d6fdce;
+    --light-yellow: #fdf5ce;
+    --black: #020300ff;
     
-    --dark-sienna: #3d151cff;
-    --phthalo-green: #0c312aff;
-    --cafe-noir: #3d2900ff;
+    --dark-pink: #742981;
+    --dark-blue: #29367f;
+    --dark-green: #367f29;
+    --dark-yellow: #7f7229;
     --light-gray: #ccccccff;
-    --purple-mountain-majesty: #a47ec9ff;
 }
 .light {
-    --bg: var(--shimmering-blush);
-    --bg-nav: linear-gradient(to right, var(--shimmering-blush), var(--spanish-violet));
-    --bg-dropdown: var(--maximum-yellow-red);
-    --text: var(--rich-black-fogra-39);
-    --border-color: var(--spanish-violet);
-    --accent: var(--turquoise);
+    --bg: var(--light-pink);
+    --bg-nav: var(--light-blue);
+    --bg-dropdown: var(--light-yellow);
+    --text: var(--black);
+    --border-color: var(--dark-pink);
+    --accent: var(--light-green);
 }
 .dark {
-    --bg: var(--dark-sienna);
-    --bg-nav: linear-gradient(to right, var(--dark-sienna), var(--purple-mountain-majesty));
-    --bg-dropdown: var(--cafe-noir);
+    --bg: var(--dark-pink);
+    --bg-nav: var(--dark-blue);
+    --bg-dropdown: var(--dark-yellow);
     --text: var(--light-gray);
-    --border-color: var(--purple-mountain-majesty);
-    --accent: var(--phthalo-green);
+    --border-color: var(--light-pink);
+    --accent: var(--dark-green);
 }
