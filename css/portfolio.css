@@ -1,0 +1,81 @@
+@import "fonts.css";
+
+* {
+    box-sizing: border-box;
+  }
+
+  .main {
+    max-width: 1000px;
+    margin: auto;
+  }
+  
+  h1 {
+    font-size: 50px;
+    word-break: break-all;
+  }
+  
+  .row {
+    margin: 8px -16px;
+    column-count: 4;
+  }
+  
+  .row,
+  .row > .column {
+    padding: 8px;
+  }
+  
+  .column {
+    break-inside: avoid;
+    backface-visibility: hidden;
+    -webkit-backface-visibility: hidden;
+  }
+  
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+
+  .content:hover {
+      transform: scale(1.5);
+      z-index: 100;
+  }
+  
+  @media screen and (max-width: 900px) {
+    .column {
+      column-count: 2;
+    }
+  }
+  
+  @media screen and (max-width: 600px) {
+    .column {
+      column-count: 1;
+    }
+  }
+
+  .title {
+      font-family: "Atmospheric";
+  }
+  
+  body {
+    padding: 20px;
+    font-family: "Montserrat";
+  }
+
+  .content {
+    padding: 10px;
+    transition: transform .2s;
+    position: relative;
+  }
+
+  .swal2-html-container {
+    font-family: "Atmospheric";
+    font-size: 10pt;
+  }
+
+  .swal2-title {
+    font-family: "Atmospheric";
+  }
+  .swal2-confirm {
+    font-family: "Atmospheric";
+}

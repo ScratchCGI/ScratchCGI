@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Scratch CGI - Portfolios</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="/css/portfolio.css">
+    <link id="pagestyle" rel="stylesheet" type="text/css" href="/css/lightmode.css">
+    <script type="application/javascript" src="/scripts/styles.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@10"></script>
+    <script src="https://cdn.jsdelivr.net/npm/promise-polyfill"></script>
+    <script src="scripts/compatibility.js"></script>
+    <link rel="icon" type="image/png" href="/favicon.png">
+  </head>
+  <body onload="init(); checkCompat();">
+    <!-- MAIN (Center website) -->
+      <div class="main">
+        <h1 class="title">Scratch CGI</h1>
+        <hr>
+        <h2 class="title">PORTFOLIOS</h2>
+        <p class="title">My portfolios of art.</p>
+        <!-- Portfolio Gallery Grid -->
+        <div class="row">
+          <div class="column">
+            <div class="content">
+              <a href="img/logo.jpg">
+                <img src="img/logo.jpg" style="width:100%">
+              </a>
+              <h3 class="title">My Logo</h3>
+              <p>This is my personal logo that I use everywhere! Rendered in Cycles.</p>
+            </div>
+          </div>
+          <div class="column">
+            <div class="content">
+              <a href="donut_project.php">
+                <img src="img/donut_project/Cafe_v2.png" style="width:100%">
+              </a>
+              <h3 class="title">Blender Donuts!</h3>
+              <p>This project is a right of passage among CG artists. Rendered in Cycles.</p>
+            </div>
+          </div>
+          <div class="column">
+            <div class="content">
+              <a href="gold_necklace_with_green_star.php">
+                <img src="img/gold_necklace_with_green_star/WA - Full.jpg" style="width:100%">
+              </a>
+              <h3 class="title">Gold Necklace with Green Star</h3>
+              <p>A simple gold necklace with a green star pendant attached to it. Rendered in LuxCore.</p>
+            </div>
+          </div>
+          <div class="column">
+            <div class="content">
+              <a href="img/Silver Three Point Earring.jpg">
+                <img src="img/Silver Three Point Earring.jpg" style="width:100%">
+              </a>
+                <h3 class="title">Silver Three Point Earring</h3>
+              <p>A simple earring, rendered in LuxCore.</p>
+            </div>
+          </div>
+          <div class="column">
+            <div class="content">
+              <a href="img/Campsite.png">
+                <img src="img/Campsite.png" style="width:100%">
+              </a>
+                <h3 class="title">LowPoly Campsite</h3>
+              <p>I used Cycles for this lowpoly campsite. There are two easter eggs, one obvious and one less so. See if you can find them.</p>
+            </div>
+          </div>
+          <div class="column">
+            <div class="content">
+              <a href="img/Dagger.png">
+                <img src="img/Dagger.png" style="width:100%">
+              </a>
+                <h3 class="title">Simple Dagger</h3>
+              <p>I'm still not quite satisfied with the way the materials turned out, but this was mainly a modeling exercise. Rendered in LuxCore.</p>
+            </div>
+          </div>
+          <div class="column">
+            <div class="content">
+              <a href="img/Spike Table.png">
+                <img src="img/Spike Table.png" style="width:100%">
+              </a>
+                <h3 class="title">Spike Table</h3>
+              <p>I was working on photoreal product modeling (not a real product, just practice), and I decided the table wasn't interesting enough. The solution: spikes! Rendered in Cycles.</p>
+            </div>
+          </div>
+        </div>
+        <div>
+          <h2 class="title">Prios</h2>
+          <p>The Prios Project is my long term project, involving CGI, story writing, worldbuilding, and voice acting. A folder containing the files for it can be found by clicking on the image below.</p>
+          <a href="https://drive.google.com/drive/folders/16k9wGB-riu7tSt9WrQmD0gPZYcutBuzz?usp=sharing">
+            <img src="img/Prios.bmp"style="max-width: 99%;max-height: auto;">
+          </a>
+        <div>
+          <p class="footer">© 2020 Diego Del Toro</p>
+          <p class="footer">For a version of this site with compressed images, click <a href="/index.html">here</a>.</p>
+        </div>
+        <div>
+          <button id="lightmode">Light Mode</button>
+          <button id="darkmode">Dark Mode</button>
+        </div>
+        <!-- END MAIN -->
+      </div>
+  </body>
+</html>
