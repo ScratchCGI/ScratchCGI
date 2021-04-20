@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Scratch CGI - Homepage</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="css/main.css">
+        <script defer type="application/javascript" src="scripts/styles.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/sweetalert2@10"></script>
+        <script src="https://cdn.jsdelivr.net/npm/promise-polyfill"></script>
+        <script src="scripts/compatibility.js"></script>
+        <link rel="icon" type="image/png" href="favicon.png">
+    </head>
+    <body class="light" onload="checkCompat();">
+        <nav class="navbar">
+            <ul class="navbar-nav">
+                <li class="nav-item"><a href="index.html">Home</a></li>
+                <li class="nav-item"><a href="about.html">About Me</a></li>
+                <li class="nav-item has-dropdown">
+                    <a href="#">Themes</a>
+                    <ul class="dropdown">
+                        <li class="dropdown-item">
+                            <a id="lightmode" href="#">light</a>
+                        </li>
+                        <li class="dropdown-item">
+                            <a id="darkmode" href="#">dark</a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="nav-item"><a href="portfolios.html">Portfolios</a></li>
+            </ul>
+        </nav>
+        <header>
+            <img src="favicon.png" class="logo">
+            <h1>Scratch<br>CGI</h1>
+            <p>CGI, Voice-Acting, Storytelling and more.</p>
+        </header>
+        <div>
+            <p>
+                See about in navbar.
+            </p>
+        </div>
+        <div>
+            <p class="footer">&copy; 2020<script>new Date().getFullYear()>2020&&document.write("-"+new Date().getFullYear());</script>, Casey Del Toro</p>        </div>
+    </body>
+</html>
